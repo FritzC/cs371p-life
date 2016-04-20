@@ -1,0 +1,4 @@
+<template T>
+class Life {
+	
+}

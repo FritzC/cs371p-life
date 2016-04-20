@@ -23,7 +23,7 @@ VALGRIND   := valgrind
 life-tests:
 	git clone https://github.com/cs371p-spring-2016/life-tests.git
 
-html: Doxyfile Life.h Life.c++ RunLife.c++ TestLife.c++
+html: Doxyfile Life.h Life.c++ RunLife.c++ TestLife.c++ AbstractCell.h AbstractCell.c++ Cell.h Cell.c++ ConwayCell.h ConwayCell.c++ FredkinCell.h FredkinCell.c++
 	doxygen Doxyfile
 
 Life.log:
@@ -32,16 +32,16 @@ Life.log:
 Doxyfile:
 	doxygen -g
 
-RunLife: Life.h Life.c++ RunLife.c++
-	$(CXX) $(CXXFLAGS) $(GPROFFLAGS) Life.c++ RunLife.c++ -o RunLife
+RunLife: Life.h Life.c++ RunLife.c++ AbstractCell.h AbstractCell.c++ Cell.h Cell.c++ ConwayCell.h ConwayCell.c++ FredkinCell.h FredkinCell.c++
+	$(CXX) $(CXXFLAGS) $(GPROFFLAGS) Life.c++ RunLife.c++ AbstractCell.c++ Cell.c++ ConwayCell.c++ FredkinCell.c++ -o RunLife
 
 RunLife.tmp: RunLife
 	./RunLife < RunLife.in > RunLife.tmp
 	diff RunLife.tmp RunLife.out
 	$(GPROF) ./RunLife
 
-TestLife: Life.h Life.c++ TestLife.c++
-	$(CXX) $(CXXFLAGS) $(GCOVFLAGS) Life.c++ TestLife.c++ -o TestLife $(LDFLAGS)
+TestLife: Life.h Life.c++ TestLife.c++ AbstractCell.h AbstractCell.c++ Cell.h Cell.c++ ConwayCell.h ConwayCell.c++ FredkinCell.h FredkinCell.c++
+	$(CXX) $(CXXFLAGS) $(GCOVFLAGS) Life.c++ TestLife.c++ AbstractCell.c++ Cell.c++ ConwayCell.c++ FredkinCell.c++ -o TestLife $(LDFLAGS)
 
 TestLife.tmp: TestLife
 	$(VALGRIND) ./TestLife                                    >  TestLife.tmp 2>&1

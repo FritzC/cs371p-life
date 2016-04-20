@@ -1,0 +1,3 @@
+class ConwayCell : AbstractCell {
+	
+}
