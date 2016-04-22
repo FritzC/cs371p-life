@@ -10,6 +10,7 @@
 
 #include <cassert>   // assert
 #include <iostream>  // cout, endl
+#include "Life.h"
 
 // ----
 // main
@@ -18,11 +19,18 @@
 int main () {
     using namespace std;
 
+    std::ifstream is("RunLife.in");
+    char c;
+
     // ----------------------
     // Life<ConwayCell> 21x13
     // ----------------------
 
     cout << "*** Life<ConwayCell> 21x13 ***" << endl;
+    Life<ConwayCell> first(21, 13);
+    while (is.get(c)) {
+
+    }
     /*
     Simulate 12 evolutions.
     Print every grid (i.e. 0, 1, 2, 3, ... 12)
