@@ -14,7 +14,9 @@ class Cell {
 		int getCellType();
 		void flip();
 		void read(char);
-		Cell() {};
+		Cell() {
+			cell = nullptr;
+		};
 		~Cell() {
 			delete cell;
 		};

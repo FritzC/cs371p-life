@@ -2,6 +2,7 @@
 #define LIFE_H
 
 #include <vector>
+#include "gtest/gtest_prod.h"
 #include "Cell.h"
 #include "ConwayCell.h"
 #include "FredkinCell.h"
@@ -14,6 +15,11 @@ class Life {
 			this->height = height;
 			generation = 0;
 			cells = std::vector<T*>(width * height);
+		};
+		~Life() {
+			for (int i = 0; i < cells.size(); i++) {
+				delete cells.at(i);
+			}
 		};
 		void step() {
 			for (int i = 0; i < width * height; i++) {
@@ -39,7 +45,7 @@ class Life {
 			}
 			std::cout << std::endl;
 		};
-		int getPopulation() {
+		int getPopulation() const {
 			int population = 0;
 			for (int i = 0; i < width * height; i++) {
 				if (cells.at(i)->isAlive()) {
@@ -48,7 +54,7 @@ class Life {
 			}
 			return population;
 		};
-		int getNeighborCount(int position) {
+		int getNeighborCount(int position) const {
 			int cellX = position % width;
 			int cellY = position / width;
 			int neighbors = 0;
@@ -80,16 +86,45 @@ class Life {
 		T* at(int index) {
 			return cells.at(index);
 		};
-		T* begin() {
-			return cells.begin();
+        T* at (int index) const {
+            return const_cast<Life*>(this)->at(index);
+        };
+		T** begin() {
+			return cells.data();
 		};
-		T* end() {
-			return cells.end();
+        T** begin () const {
+            return const_cast<Life*>(this)->begin();
+        };
+		T** end() {
+			return cells.data() + cells.size();
 		};
+        T** end () const {
+            return const_cast<Life*>(this)->end();
+        };
 	private:
+		FRIEND_TEST(LifeFixture, initLife1);
+		FRIEND_TEST(LifeFixture, initLife2);
+		FRIEND_TEST(LifeFixture, initLife3);
+		FRIEND_TEST(LifeFixture, initLife4);
 		int width;
+		FRIEND_TEST(LifeFixture, initLife1);
+		FRIEND_TEST(LifeFixture, initLife2);
+		FRIEND_TEST(LifeFixture, initLife3);
+		FRIEND_TEST(LifeFixture, initLife4);
 		int height;
+		FRIEND_TEST(LifeFixture, initLife5);
+		FRIEND_TEST(LifeFixture, stepLife1);
+		FRIEND_TEST(LifeFixture, stepLife2);
+		FRIEND_TEST(LifeFixture, stepLife3);
 		int generation;
+		FRIEND_TEST(LifeFixture, iterator1);
+		FRIEND_TEST(LifeFixture, iterator2);
+		FRIEND_TEST(LifeFixture, iterator3);
+		FRIEND_TEST(LifeFixture, iterator4);
+		FRIEND_TEST(LifeFixture, iterator5);
+		FRIEND_TEST(LifeFixture, iterator6);
+		FRIEND_TEST(LifeFixture, iterator7);
+		FRIEND_TEST(LifeFixture, iterator8);
 		std::vector<T*> cells;
 };
 #endif

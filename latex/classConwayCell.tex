@@ -1,0 +1,99 @@
+\hypertarget{classConwayCell}{\section{Conway\-Cell Class Reference}
+\label{classConwayCell}\index{Conway\-Cell@{Conway\-Cell}}
+}
+Inheritance diagram for Conway\-Cell\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classConwayCell}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classConwayCell_aec5f3637b37c4eef65cca5824bd0d6ce}{step} (int)
+\item 
+void \hyperlink{classConwayCell_a38780fdf3f4f4d5c5ed18fb732d428f7}{print} () const 
+\item 
+int \hyperlink{classConwayCell_ace1f4f79985ad1a375953f6da3fe0d6d}{get\-Cell\-Type} () const 
+\item 
+void \hyperlink{classConwayCell_aa1c5e99c5fbbc6d4fae3e70c03d412e2}{read} (char)
+\item 
+\hyperlink{classConwayCell}{Conway\-Cell} $\ast$ \hyperlink{classConwayCell_ab27dbaa286984ecbf77a35fbc742ea7f}{clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConwayCell_ab27dbaa286984ecbf77a35fbc742ea7f}{\index{Conway\-Cell@{Conway\-Cell}!clone@{clone}}
+\index{clone@{clone}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conway\-Cell} $\ast$ Conway\-Cell\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_ab27dbaa286984ecbf77a35fbc742ea7f}
+Clones the cell 
+
+Implements \hyperlink{classAbstractCell}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_ace1f4f79985ad1a375953f6da3fe0d6d}{\index{Conway\-Cell@{Conway\-Cell}!get\-Cell\-Type@{get\-Cell\-Type}}
+\index{get\-Cell\-Type@{get\-Cell\-Type}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{get\-Cell\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Conway\-Cell\-::get\-Cell\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_ace1f4f79985ad1a375953f6da3fe0d6d}
+Gets the cell type
+
+\begin{DoxyReturn}{Returns}
+-\/ \hyperlink{classCell}{Cell} type 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractCell}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_a38780fdf3f4f4d5c5ed18fb732d428f7}{\index{Conway\-Cell@{Conway\-Cell}!print@{print}}
+\index{print@{print}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Conway\-Cell\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_a38780fdf3f4f4d5c5ed18fb732d428f7}
+Prints the cell 
+
+Implements \hyperlink{classAbstractCell}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_aa1c5e99c5fbbc6d4fae3e70c03d412e2}{\index{Conway\-Cell@{Conway\-Cell}!read@{read}}
+\index{read@{read}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Conway\-Cell\-::read (
+\begin{DoxyParamCaption}
+\item[{char}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_aa1c5e99c5fbbc6d4fae3e70c03d412e2}
+Sets whether the cell is alive based on a char input 
+
+Implements \hyperlink{classAbstractCell}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_aec5f3637b37c4eef65cca5824bd0d6ce}{\index{Conway\-Cell@{Conway\-Cell}!step@{step}}
+\index{step@{step}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}void Conway\-Cell\-::step (
+\begin{DoxyParamCaption}
+\item[{int}]{neighbor\-Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_aec5f3637b37c4eef65cca5824bd0d6ce}
+Steps the cell forward one generation
+
+
+\begin{DoxyParams}{Parameters}
+{\em neighbor\-Count} & -\/ Number of neighbors the cell has \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractCell}{Abstract\-Cell}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Conway\-Cell.\-h\item 
+Conway\-Cell.\-c++\end{DoxyCompactItemize}

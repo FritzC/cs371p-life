@@ -32,8 +32,7 @@ void Cell::flip() {
 	cell->flip();
 	if (getCellType() == AbstractCell::FREDKIN
 			&& dynamic_cast<FredkinCell*>(cell)->needsTransform()) {
-		cell = new ConwayCell();
-		cell->read('*');
+		read('*');
 	}
 }
 

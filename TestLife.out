@@ -1,0 +1,121 @@
+==8793== Memcheck, a memory error detector
+==8793== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==8793== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==8793== Command: ./TestLife
+==8793== 
+Running main() from gtest_main.cc
+[==========] Running 49 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 49 tests from LifeFixture
+[ RUN      ] LifeFixture.initLife1
+[       OK ] LifeFixture.initLife1 (20 ms)
+[ RUN      ] LifeFixture.initLife2
+[       OK ] LifeFixture.initLife2 (2 ms)
+[ RUN      ] LifeFixture.initLife3
+[       OK ] LifeFixture.initLife3 (2 ms)
+[ RUN      ] LifeFixture.initLife4
+[       OK ] LifeFixture.initLife4 (1 ms)
+[ RUN      ] LifeFixture.initLife5
+[       OK ] LifeFixture.initLife5 (1 ms)
+[ RUN      ] LifeFixture.stepLife1
+[       OK ] LifeFixture.stepLife1 (8 ms)
+[ RUN      ] LifeFixture.stepLife2
+[       OK ] LifeFixture.stepLife2 (3 ms)
+[ RUN      ] LifeFixture.stepLife3
+[       OK ] LifeFixture.stepLife3 (3 ms)
+[ RUN      ] LifeFixture.readLife1
+[       OK ] LifeFixture.readLife1 (2 ms)
+[ RUN      ] LifeFixture.readLife2
+[       OK ] LifeFixture.readLife2 (3 ms)
+[ RUN      ] LifeFixture.readLife3
+[       OK ] LifeFixture.readLife3 (17 ms)
+[ RUN      ] LifeFixture.readLife4
+[       OK ] LifeFixture.readLife4 (17 ms)
+[ RUN      ] LifeFixture.readLife5
+[       OK ] LifeFixture.readLife5 (2 ms)
+[ RUN      ] LifeFixture.population1
+[       OK ] LifeFixture.population1 (3 ms)
+[ RUN      ] LifeFixture.population2
+[       OK ] LifeFixture.population2 (3 ms)
+[ RUN      ] LifeFixture.population3
+[       OK ] LifeFixture.population3 (2 ms)
+[ RUN      ] LifeFixture.population4
+[       OK ] LifeFixture.population4 (3 ms)
+[ RUN      ] LifeFixture.population5
+[       OK ] LifeFixture.population5 (3 ms)
+[ RUN      ] LifeFixture.population6
+[       OK ] LifeFixture.population6 (2 ms)
+[ RUN      ] LifeFixture.population7
+[       OK ] LifeFixture.population7 (4 ms)
+[ RUN      ] LifeFixture.neighborCount1
+[       OK ] LifeFixture.neighborCount1 (5 ms)
+[ RUN      ] LifeFixture.neighborCount2
+[       OK ] LifeFixture.neighborCount2 (2 ms)
+[ RUN      ] LifeFixture.iterator1
+[       OK ] LifeFixture.iterator1 (4 ms)
+[ RUN      ] LifeFixture.iterator2
+[       OK ] LifeFixture.iterator2 (2 ms)
+[ RUN      ] LifeFixture.iterator3
+[       OK ] LifeFixture.iterator3 (3 ms)
+[ RUN      ] LifeFixture.iterator4
+[       OK ] LifeFixture.iterator4 (2 ms)
+[ RUN      ] LifeFixture.iterator5
+[       OK ] LifeFixture.iterator5 (2 ms)
+[ RUN      ] LifeFixture.iterator6
+[       OK ] LifeFixture.iterator6 (2 ms)
+[ RUN      ] LifeFixture.iterator7
+[       OK ] LifeFixture.iterator7 (2 ms)
+[ RUN      ] LifeFixture.iterator8
+[       OK ] LifeFixture.iterator8 (1 ms)
+[ RUN      ] LifeFixture.conwayStep1
+[       OK ] LifeFixture.conwayStep1 (3 ms)
+[ RUN      ] LifeFixture.conwayStep2
+[       OK ] LifeFixture.conwayStep2 (2 ms)
+[ RUN      ] LifeFixture.conwayStep3
+[       OK ] LifeFixture.conwayStep3 (1 ms)
+[ RUN      ] LifeFixture.conwayType
+[       OK ] LifeFixture.conwayType (1 ms)
+[ RUN      ] LifeFixture.conwayRead1
+[       OK ] LifeFixture.conwayRead1 (2 ms)
+[ RUN      ] LifeFixture.conwayRead2
+[       OK ] LifeFixture.conwayRead2 (1 ms)
+[ RUN      ] LifeFixture.fredkinStep1
+[       OK ] LifeFixture.fredkinStep1 (3 ms)
+[ RUN      ] LifeFixture.fredkinStep2
+[       OK ] LifeFixture.fredkinStep2 (2 ms)
+[ RUN      ] LifeFixture.fredkinStep3
+[       OK ] LifeFixture.fredkinStep3 (2 ms)
+[ RUN      ] LifeFixture.fredkinType
+[       OK ] LifeFixture.fredkinType (1 ms)
+[ RUN      ] LifeFixture.fredkinRead1
+[       OK ] LifeFixture.fredkinRead1 (2 ms)
+[ RUN      ] LifeFixture.fredkinRead2
+[       OK ] LifeFixture.fredkinRead2 (2 ms)
+[ RUN      ] LifeFixture.fredkinTransform
+[       OK ] LifeFixture.fredkinTransform (2 ms)
+[ RUN      ] LifeFixture.cellRead1
+[       OK ] LifeFixture.cellRead1 (2 ms)
+[ RUN      ] LifeFixture.cellRead2
+[       OK ] LifeFixture.cellRead2 (1 ms)
+[ RUN      ] LifeFixture.cellRead3
+[       OK ] LifeFixture.cellRead3 (2 ms)
+[ RUN      ] LifeFixture.cellRead4
+[       OK ] LifeFixture.cellRead4 (2 ms)
+[ RUN      ] LifeFixture.cellRead5
+[       OK ] LifeFixture.cellRead5 (1 ms)
+[ RUN      ] LifeFixture.cellRead6
+[       OK ] LifeFixture.cellRead6 (2 ms)
+[----------] 49 tests from LifeFixture (167 ms total)
+
+[----------] Global test environment tear-down
+[==========] 49 tests from 1 test case ran. (196 ms total)
+[  PASSED  ] 49 tests.
+==8793== 
+==8793== HEAP SUMMARY:
+==8793==     in use at exit: 0 bytes in 0 blocks
+==8793==   total heap usage: 1,083 allocs, 1,083 frees, 140,787 bytes allocated
+==8793== 
+==8793== All heap blocks were freed -- no leaks are possible
+==8793== 
+==8793== For counts of detected and suppressed errors, rerun with: -v
+==8793== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
