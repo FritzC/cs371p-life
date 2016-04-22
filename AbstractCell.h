@@ -9,8 +9,8 @@
 class AbstractCell {
 	public:
 		AbstractCell();
+		void flip();
 		bool isAlive();
-		virtual int getNeighborCount(int, std::vector<AbstractCell*>, int, int) = 0;
 		virtual void step(int) = 0;
 		virtual void print() const = 0;
 		virtual int getCellType() const = 0;
@@ -21,5 +21,6 @@ class AbstractCell {
 		};
 	protected:
 		bool alive;
+		bool toFlip;
 };
 #endif
