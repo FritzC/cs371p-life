@@ -16,12 +16,15 @@ int ConwayCell::getCellType() const {
 	return CONWAY;
 }
 
-ConwayCell* ConwayCell::read(char input) {
+void ConwayCell::read(char input) {
 	alive = (input != '.');
 	/*ConwayCell* cell = new ConwayCell();
 	if (input == '.') {
 		cell->alive = false;
 	}
 	return cell;*/
-	return nullptr;
+}
+
+ConwayCell* ConwayCell::clone() {
+	return new ConwayCell(*this);
 }

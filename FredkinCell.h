@@ -3,12 +3,16 @@
 
 #include "AbstractCell.h"
 
-class FredkinCell : AbstractCell {
+class FredkinCell : public AbstractCell {
 	public:
-		int getNeighborCount(int, std::vector<AbstractCell*>, int, int);
+		bool needsTransform();
 		void step(int);
 		void print() const;
 		int getCellType() const;
-		FredkinCell* read(char);
+		void flip();
+		void read(char);
+		FredkinCell* clone();
+	private:
+		int age;
 };
 #endif

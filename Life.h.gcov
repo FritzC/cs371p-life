@@ -1,0 +1,107 @@
+        -:    0:Source:Life.h
+        -:    0:Graph:Life.gcno
+        -:    0:Data:Life.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#ifndef LIFE_H
+        -:    2:#define LIFE_H
+        -:    3:
+        -:    4:#include <vector>
+        -:    5:#include "Cell.h"
+        -:    6:#include "ConwayCell.h"
+        -:    7:#include "FredkinCell.h"
+        -:    8:
+        -:    9:template<typename T>
+        -:   10:class Life {
+        -:   11:	public:
+        -:   12:		Life(int width, int height) {
+        -:   13:			this->width = width;
+        -:   14:			this->height = height;
+        -:   15:			generation = 0;
+        -:   16:			cells = std::vector<T*>(width * height);
+        -:   17:		};
+        -:   18:		void step() {
+        -:   19:			for (int i = 0; i < width * height; i++) {
+        -:   20:				cells.at(i)->step(getNeighborCount(i));
+        -:   21:			}
+        -:   22:			for (int i = 0; i < width * height; i++) {
+        -:   23:				cells.at(i)->flip();
+        -:   24:			}
+        -:   25:			generation++;
+        -:   26:		};
+        -:   27:		void readInput(char in, int position) {
+        -:   28:			T* type = new T();
+        -:   29:			type->read(in);
+        -:   30:			cells[position] = type;
+        -:   31:		};
+        -:   32:		void print() {
+        -:   33:			std::cout << "Generation = " << generation << ", Population = " << getPopulation() << ".";
+        -:   34:			for (int i = 0; i < width * height; i++) {
+        -:   35:				if (i % width == 0) {
+        -:   36:					std::cout << std::endl;
+        -:   37:				}
+        -:   38:				cells.at(i)->print();
+        -:   39:			}
+        -:   40:			std::cout << std::endl;
+        -:   41:		};
+        -:   42:		int getPopulation() {
+        -:   43:			int population = 0;
+        -:   44:			for (int i = 0; i < width * height; i++) {
+        -:   45:				if (cells.at(i)->isAlive()) {
+        -:   46:					population++;
+        -:   47:				}
+        -:   48:			}
+        -:   49:			return population;
+        -:   50:		};
+        -:   51:		int getNeighborCount(int position) {
+        -:   52:			int cellX = position % width;
+        -:   53:			int cellY = position / width;
+        -:   54:			int neighbors = 0;
+        -:   55:			int checkX = 0;
+        -:   56:			int checkY = 0;
+        -:   57:			for (int i = 0; i < 8; i++) {
+        -:   58:				if (cells.at(position)->getCellType() == AbstractCell::FREDKIN) {
+        -:   59:					if (i == 0 || i == 2 || i == 5 || i == 7) {
+        -:   60:						continue;
+        -:   61:					}
+        -:   62:				}
+        -:   63:				if (i < 3) {
+        -:   64:					checkX = cellX + i - 1;
+        -:   65:					checkY = cellY - 1;
+        -:   66:				} else if (i < 5) {
+        -:   67:					checkX = cellX + (i * 2 - 7);
+        -:   68:					checkY = cellY;
+        -:   69:				} else {
+        -:   70:					checkX = cellX + i - 6;
+        -:   71:					checkY = cellY + 1;
+        -:   72:				}
+        -:   73:				if (checkX >= 0 && checkX < width && checkY >= 0 && checkY < height
+        -:   74:						&& cells.at(checkX + checkY * width)->isAlive()) {
+        -:   75:					neighbors++;
+        -:   76:				}
+        -:   77:			}
+        -:   78:			return neighbors;
+        -:   79:		};
+        -:   80:		T* at(int index) {
+        -:   81:			return cells.at(index);
+        -:   82:		};
+        -:   83:		T* begin() {
+        -:   84:			return cells.begin();
+        -:   85:		};
+        -:   86:		T* end() {
+        -:   87:			return cells.end();
+        -:   88:		};
+        -:   89:	private:
+        -:   90:		int width;
+        -:   91:		int height;
+        -:   92:		int generation;
+        -:   93:		std::vector<T*> cells;
+function _GLOBAL__sub_I_Life.c__ called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        3:   94:};
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0%
+        -:   95:#endif

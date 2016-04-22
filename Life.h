@@ -17,32 +17,17 @@ class Life {
 		};
 		void step() {
 			for (int i = 0; i < width * height; i++) {
-				AbstractCell* cell = dynamic_cast<AbstractCell*>(cells.at(i));
-				if (cell != nullptr) {
-					cell->step(getNeighborCount(i));
-				} else {
-					//dynamic_cast<Cell*>(cells.at(i))->step();
-				}
+				cells.at(i)->step(getNeighborCount(i));
 			}
 			for (int i = 0; i < width * height; i++) {
-				AbstractCell* cell = dynamic_cast<AbstractCell*>(cells.at(i));
-				if (cell != nullptr) {
-					cell->flip();
-				} else {
-					//dynamic_cast<Cell*>(cells.at(i))->step();
-				}
+				cells.at(i)->flip();
 			}
 			generation++;
 		};
 		void readInput(char in, int position) {
 			T* type = new T();
-			AbstractCell* cell = dynamic_cast<AbstractCell*>(type);
-			if (cell != nullptr) {
-				cell->read(in);
-				cells[position] = type;
-			} else {
-				//dynamic_cast<Cell*>(cells.at(i))->step();
-			}
+			type->read(in);
+			cells[position] = type;
 		};
 		void print() {
 			std::cout << "Generation = " << generation << ", Population = " << getPopulation() << ".";
@@ -50,25 +35,15 @@ class Life {
 				if (i % width == 0) {
 					std::cout << std::endl;
 				}
-				AbstractCell* cell = dynamic_cast<AbstractCell*>(cells.at(i));
-				if (cell != nullptr) {
-					cell->print();
-				} else {
-					//dynamic_cast<Cell*>(cells.at(i))->step();
-				}
+				cells.at(i)->print();
 			}
 			std::cout << std::endl;
 		};
 		int getPopulation() {
 			int population = 0;
 			for (int i = 0; i < width * height; i++) {
-				AbstractCell* cell = dynamic_cast<AbstractCell*>(cells.at(i));
-				if (cell != nullptr) {
-					if (cell->isAlive()) {
-						population++;
-					}
-				} else {
-					//dynamic_cast<Cell*>(cells.at(i))->step();
+				if (cells.at(i)->isAlive()) {
+					population++;
 				}
 			}
 			return population;
@@ -80,6 +55,11 @@ class Life {
 			int checkX = 0;
 			int checkY = 0;
 			for (int i = 0; i < 8; i++) {
+				if (cells.at(position)->getCellType() == AbstractCell::FREDKIN) {
+					if (i == 0 || i == 2 || i == 5 || i == 7) {
+						continue;
+					}
+				}
 				if (i < 3) {
 					checkX = cellX + i - 1;
 					checkY = cellY - 1;
@@ -96,7 +76,7 @@ class Life {
 				}
 			}
 			return neighbors;
-		}
+		};
 		T* at(int index) {
 			return cells.at(index);
 		};

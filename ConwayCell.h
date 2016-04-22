@@ -8,6 +8,7 @@ class ConwayCell : public AbstractCell {
 		void step(int);
 		void print() const;
 		int getCellType() const;
-		ConwayCell* read(char);
+		void read(char);
+		ConwayCell* clone();
 };
 #endif

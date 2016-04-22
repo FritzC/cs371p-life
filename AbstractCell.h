@@ -9,12 +9,14 @@
 class AbstractCell {
 	public:
 		AbstractCell();
-		void flip();
+		virtual ~AbstractCell() {};
 		bool isAlive();
+		virtual void flip();
 		virtual void step(int) = 0;
 		virtual void print() const = 0;
+		virtual void read(char) = 0;
 		virtual int getCellType() const = 0;
-		virtual AbstractCell* read(char) = 0;
+		virtual AbstractCell* clone() = 0;
 		enum CellType {
 			CONWAY,
 			FREDKIN
