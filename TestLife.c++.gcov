@@ -1,0 +1,1935 @@
+        -:    0:Source:TestLife.c++
+        -:    0:Graph:TestLife.gcno
+        -:    0:Data:TestLife.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <assert.h>
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:#include "Life.h"
+        -:    5:
+        -:    6:using namespace std;
+        -:    7:
+function _ZN26LifeFixture_initLife1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_initLife1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_initLife1_Test8TestBodyEv called 1 returned 100% blocks executed 83%
+function _ZN26LifeFixture_initLife1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:    8:TEST(LifeFixture, initLife1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:    9:	Life<ConwayCell> life(10, 99);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   10:	assert(life.width == 10);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+        1:   11:}
+        -:   12:
+function _ZN26LifeFixture_initLife2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_initLife2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_initLife2_Test8TestBodyEv called 1 returned 100% blocks executed 83%
+function _ZN26LifeFixture_initLife2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   13:TEST(LifeFixture, initLife2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   14:	Life<ConwayCell> life(10, 99);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   15:	assert(life.height == 99);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+        1:   16:}
+        -:   17:
+function _ZN26LifeFixture_initLife3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_initLife3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_initLife3_Test8TestBodyEv called 1 returned 100% blocks executed 83%
+function _ZN26LifeFixture_initLife3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   18:TEST(LifeFixture, initLife3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   19:	Life<ConwayCell> life(0, 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   20:	assert(life.width == 0); 
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+        1:   21:}
+        -:   22:
+function _ZN26LifeFixture_initLife4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_initLife4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_initLife4_Test8TestBodyEv called 1 returned 100% blocks executed 83%
+function _ZN26LifeFixture_initLife4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   23:TEST(LifeFixture, initLife4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   24:	Life<ConwayCell> life(0, 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   25:	assert(life.height == 0);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+        1:   26:}
+        -:   27:
+function _ZN26LifeFixture_initLife5_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_initLife5_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_initLife5_Test8TestBodyEv called 1 returned 100% blocks executed 83%
+function _ZN26LifeFixture_initLife5_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   28:TEST(LifeFixture, initLife5) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   29:	Life<ConwayCell> life(0, 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   30:	assert(life.generation == 0);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+        1:   31:}
+        -:   32:
+function _ZN26LifeFixture_stepLife1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_stepLife1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_stepLife1_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN26LifeFixture_stepLife1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   33:TEST(LifeFixture, stepLife1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   34:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   35:	life.readInput('.', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   36:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   37:	life.readInput('.', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   38:	life.readInput('.', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   39:	life.step();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   40:	assert(life.generation == 1);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+call    4 never executed
+        1:   41:}
+        -:   42:
+function _ZN26LifeFixture_stepLife2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_stepLife2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_stepLife2_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_stepLife2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   43:TEST(LifeFixture, stepLife2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   44:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   45:	life.readInput('.', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   46:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   47:	life.readInput('.', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   48:	life.readInput('.', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   49:	life.step();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   50:	life.step();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   51:	assert(life.generation == 2);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+call    4 never executed
+        1:   52:}
+        -:   53:
+function _ZN26LifeFixture_stepLife3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_stepLife3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_stepLife3_Test8TestBodyEv called 1 returned 100% blocks executed 81%
+function _ZN26LifeFixture_stepLife3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   54:TEST(LifeFixture, stepLife3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   55:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   56:	life.readInput('.', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   57:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   58:	life.readInput('.', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   59:	life.readInput('.', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+       11:   60:	for (int i = 0; i < 10; i++) {
+branch  0 taken 91%
+branch  1 taken 9% (fallthrough)
+       10:   61:		life.step();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        -:   62:	}
+        1:   63:	assert(life.generation == 10);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+call    3 returned 100%
+call    4 never executed
+        1:   64:}
+        -:   65:
+function _ZN26LifeFixture_readLife1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_readLife1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_readLife1_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_readLife1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   66:TEST(LifeFixture, readLife1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   67:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   68:	life.readInput('.', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   69:	assert(life.at(0)->getCellType() == AbstractCell::CONWAY && !life.at(0)->isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+branch 12 taken 100% (fallthrough)
+branch 13 taken 0% (throw)
+branch 14 taken 0% (fallthrough)
+branch 15 taken 100%
+call   16 never executed
+call   17 returned 100%
+call   18 never executed
+        1:   70:}
+        -:   71:
+function _ZN26LifeFixture_readLife2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_readLife2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_readLife2_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_readLife2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   72:TEST(LifeFixture, readLife2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   73:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   74:	life.readInput('*', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   75:	assert(life.at(0)->getCellType() == AbstractCell::CONWAY && life.at(0)->isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+branch 12 taken 100% (fallthrough)
+branch 13 taken 0% (throw)
+branch 14 taken 0% (fallthrough)
+branch 15 taken 100%
+call   16 never executed
+call   17 returned 100%
+call   18 never executed
+        1:   76:}
+        -:   77:
+function _ZN26LifeFixture_readLife3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_readLife3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_readLife3_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_readLife3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   78:TEST(LifeFixture, readLife3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   79:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   80:	life.readInput('*', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   81:	assert(life.at(1)->getCellType() == AbstractCell::CONWAY && life.at(1)->isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+branch 12 taken 100% (fallthrough)
+branch 13 taken 0% (throw)
+branch 14 taken 0% (fallthrough)
+branch 15 taken 100%
+call   16 never executed
+call   17 returned 100%
+call   18 never executed
+        1:   82:}
+        -:   83:
+function _ZN26LifeFixture_readLife4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_readLife4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_readLife4_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_readLife4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   84:TEST(LifeFixture, readLife4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   85:	Life<FredkinCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   86:	life.readInput('0', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   87:	assert(life.at(1)->getCellType() == AbstractCell::FREDKIN && life.at(1)->isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+branch 12 taken 100% (fallthrough)
+branch 13 taken 0% (throw)
+branch 14 taken 0% (fallthrough)
+branch 15 taken 100%
+call   16 never executed
+call   17 returned 100%
+call   18 never executed
+        1:   88:}
+        -:   89:
+function _ZN26LifeFixture_readLife5_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_readLife5_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_readLife5_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_readLife5_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   90:TEST(LifeFixture, readLife5) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   91:	Life<FredkinCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   92:	life.readInput('-', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   93:	assert(life.at(1)->getCellType() == AbstractCell::FREDKIN && !life.at(1)->isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+branch 12 taken 100% (fallthrough)
+branch 13 taken 0% (throw)
+branch 14 taken 0% (fallthrough)
+branch 15 taken 100%
+call   16 never executed
+call   17 returned 100%
+call   18 never executed
+        1:   94:}
+        -:   95:
+function _ZN28LifeFixture_population1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_population1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_population1_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN28LifeFixture_population1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   96:TEST(LifeFixture, population1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:   97:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   98:	life.readInput('.', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   99:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  100:	life.readInput('.', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  101:	life.readInput('.', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  102:	assert(life.getPopulation() == 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  103:}
+        -:  104:
+function _ZN28LifeFixture_population2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_population2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_population2_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN28LifeFixture_population2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  105:TEST(LifeFixture, population2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  106:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  107:	life.readInput('*', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  108:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  109:	life.readInput('.', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  110:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  111:	assert(life.getPopulation() == 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  112:}
+        -:  113:
+function _ZN28LifeFixture_population3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_population3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_population3_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN28LifeFixture_population3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  114:TEST(LifeFixture, population3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  115:	Life<ConwayCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  116:	life.readInput('*', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  117:	life.readInput('*', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  118:	life.readInput('*', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  119:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  120:	assert(life.getPopulation() == 4);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  121:}
+        -:  122:
+function _ZN28LifeFixture_population4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_population4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_population4_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN28LifeFixture_population4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  123:TEST(LifeFixture, population4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  124:	Life<FredkinCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  125:	life.readInput('-', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  126:	life.readInput('-', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  127:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  128:	life.readInput('-', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  129:	assert(life.getPopulation() == 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  130:}
+        -:  131:
+function _ZN28LifeFixture_population5_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_population5_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_population5_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN28LifeFixture_population5_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  132:TEST(LifeFixture, population5) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  133:	Life<FredkinCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  134:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  135:	life.readInput('-', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  136:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  137:	life.readInput('-', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  138:	assert(life.getPopulation() == 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  139:}
+        -:  140:
+function _ZN28LifeFixture_population6_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_population6_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_population6_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN28LifeFixture_population6_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  141:TEST(LifeFixture, population6) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  142:	Life<FredkinCell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  143:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  144:	life.readInput('1', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  145:	life.readInput('1', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  146:	life.readInput('1', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  147:	assert(life.getPopulation() == 4);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  148:}
+        -:  149:
+function _ZN28LifeFixture_population7_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_population7_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_population7_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN28LifeFixture_population7_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  150:TEST(LifeFixture, population7) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  151:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  152:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  153:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  154:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  155:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  156:	assert(life.getPopulation() == 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  157:}
+        -:  158:
+function _ZN31LifeFixture_neighborCount1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN31LifeFixture_neighborCount1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN31LifeFixture_neighborCount1_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN31LifeFixture_neighborCount1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  159:TEST(LifeFixture, neighborCount1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  160:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  161:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  162:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  163:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  164:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  165:	assert(life.getNeighborCount(0) == 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  166:}
+        -:  167:
+function _ZN31LifeFixture_neighborCount2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN31LifeFixture_neighborCount2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN31LifeFixture_neighborCount2_Test8TestBodyEv called 1 returned 100% blocks executed 77%
+function _ZN31LifeFixture_neighborCount2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  168:TEST(LifeFixture, neighborCount2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  169:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  170:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  171:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  172:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  173:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  174:	assert(life.getNeighborCount(3) == 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  175:}
+        -:  176:
+function _ZN26LifeFixture_iterator1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator1_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_iterator1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  177:TEST(LifeFixture, iterator1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  178:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  179:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  180:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  181:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  182:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  183:	assert(life.begin() == &life.cells[0]);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+call    6 never executed
+        1:  184:}
+        -:  185:
+function _ZN26LifeFixture_iterator2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator2_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_iterator2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  186:TEST(LifeFixture, iterator2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  187:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  188:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  189:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  190:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  191:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  192:	assert(life.end() == &life.cells[4]);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+call    6 never executed
+        1:  193:}
+        -:  194:
+function _ZN26LifeFixture_iterator3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator3_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_iterator3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  195:TEST(LifeFixture, iterator3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  196:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  197:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  198:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  199:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  200:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  201:	assert(*life.begin() == life.cells[0]);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+call    6 never executed
+        1:  202:}
+        -:  203:
+function _ZN26LifeFixture_iterator4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator4_Test8TestBodyEv called 1 returned 100% blocks executed 79%
+function _ZN26LifeFixture_iterator4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  204:TEST(LifeFixture, iterator4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  205:	Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  206:	life.readInput('1', 0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  207:	life.readInput('.', 1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  208:	life.readInput('-', 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  209:	life.readInput('*', 3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  210:	assert(life.begin() + 4 == life.end());
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+call    6 never executed
+        1:  211:}
+        -:  212:
+function _ZN26LifeFixture_iterator5_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator5_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator5_Test8TestBodyEv called 1 returned 100% blocks executed 88%
+function _ZN26LifeFixture_iterator5_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  213:TEST(LifeFixture, iterator5) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  214:	const Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  215:	assert(life.begin() == &life.cells[0]);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+        1:  216:}
+        -:  217:
+function _ZN26LifeFixture_iterator6_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator6_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator6_Test8TestBodyEv called 1 returned 100% blocks executed 88%
+function _ZN26LifeFixture_iterator6_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  218:TEST(LifeFixture, iterator6) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  219:	const Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  220:	assert(life.end() == &life.cells[4]);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+        1:  221:}
+        -:  222:
+function _ZN26LifeFixture_iterator7_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator7_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator7_Test8TestBodyEv called 1 returned 100% blocks executed 88%
+function _ZN26LifeFixture_iterator7_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  223:TEST(LifeFixture, iterator7) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  224:	const Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  225:	assert(life.begin() + 1 == &life.cells[1]);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+        1:  226:}
+        -:  227:
+function _ZN26LifeFixture_iterator8_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_iterator8_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_iterator8_Test8TestBodyEv called 1 returned 100% blocks executed 88%
+function _ZN26LifeFixture_iterator8_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  228:TEST(LifeFixture, iterator8) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  229:	const Life<Cell> life(2, 2);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  230:	assert(life.begin() + 4 == life.end());
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 never executed
+call    5 returned 100%
+        1:  231:}
+        -:  232:
+function _ZN28LifeFixture_conwayStep1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_conwayStep1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_conwayStep1_Test8TestBodyEv called 1 returned 100% blocks executed 73%
+function _ZN28LifeFixture_conwayStep1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  233:TEST(LifeFixture, conwayStep1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  234:	ConwayCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  235:	c.step(1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  236:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  237:	assert(!c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  238:}
+        -:  239:
+function _ZN28LifeFixture_conwayStep2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_conwayStep2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_conwayStep2_Test8TestBodyEv called 1 returned 100% blocks executed 73%
+function _ZN28LifeFixture_conwayStep2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  240:TEST(LifeFixture, conwayStep2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  241:	ConwayCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  242:	c.step(4);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  243:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  244:	assert(!c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  245:}
+        -:  246:
+function _ZN28LifeFixture_conwayStep3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_conwayStep3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_conwayStep3_Test8TestBodyEv called 1 returned 100% blocks executed 73%
+function _ZN28LifeFixture_conwayStep3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  247:TEST(LifeFixture, conwayStep3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  248:	ConwayCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  249:	c.step(3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  250:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  251:	assert(c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  252:}
+        -:  253:
+function _ZN27LifeFixture_conwayType_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN27LifeFixture_conwayType_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN27LifeFixture_conwayType_Test8TestBodyEv called 1 returned 100% blocks executed 67%
+function _ZN27LifeFixture_conwayType_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  254:TEST(LifeFixture, conwayType) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  255:	ConwayCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  256:	assert(c.getCellType() == AbstractCell::CONWAY);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  257:}
+        -:  258:
+function _ZN28LifeFixture_conwayRead1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_conwayRead1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_conwayRead1_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN28LifeFixture_conwayRead1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  259:TEST(LifeFixture, conwayRead1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  260:	ConwayCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  261:	c.read('.');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  262:	assert(!c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  263:}
+        -:  264:
+function _ZN28LifeFixture_conwayRead2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_conwayRead2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_conwayRead2_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN28LifeFixture_conwayRead2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  265:TEST(LifeFixture, conwayRead2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  266:	ConwayCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  267:	c.read('*');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  268:	assert(c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  269:}
+        -:  270:
+function _ZN29LifeFixture_fredkinStep1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN29LifeFixture_fredkinStep1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN29LifeFixture_fredkinStep1_Test8TestBodyEv called 1 returned 100% blocks executed 73%
+function _ZN29LifeFixture_fredkinStep1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  271:TEST(LifeFixture, fredkinStep1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  272:	FredkinCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  273:	c.step(1);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  274:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  275:	assert(c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  276:}
+        -:  277:
+function _ZN29LifeFixture_fredkinStep2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN29LifeFixture_fredkinStep2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN29LifeFixture_fredkinStep2_Test8TestBodyEv called 1 returned 100% blocks executed 73%
+function _ZN29LifeFixture_fredkinStep2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  278:TEST(LifeFixture, fredkinStep2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  279:	FredkinCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  280:	c.step(4);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  281:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  282:	assert(!c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  283:}
+        -:  284:
+function _ZN29LifeFixture_fredkinStep3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN29LifeFixture_fredkinStep3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN29LifeFixture_fredkinStep3_Test8TestBodyEv called 1 returned 100% blocks executed 73%
+function _ZN29LifeFixture_fredkinStep3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  285:TEST(LifeFixture, fredkinStep3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  286:	FredkinCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  287:	c.step(3);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  288:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  289:	assert(c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  290:}
+        -:  291:
+function _ZN28LifeFixture_fredkinType_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN28LifeFixture_fredkinType_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN28LifeFixture_fredkinType_Test8TestBodyEv called 1 returned 100% blocks executed 67%
+function _ZN28LifeFixture_fredkinType_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  292:TEST(LifeFixture, fredkinType) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  293:	FredkinCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  294:	assert(c.getCellType() == AbstractCell::FREDKIN);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  295:}
+        -:  296:
+function _ZN29LifeFixture_fredkinRead1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN29LifeFixture_fredkinRead1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN29LifeFixture_fredkinRead1_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN29LifeFixture_fredkinRead1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  297:TEST(LifeFixture, fredkinRead1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  298:	FredkinCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  299:	c.read('-');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  300:	assert(!c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  301:}
+        -:  302:
+function _ZN29LifeFixture_fredkinRead2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN29LifeFixture_fredkinRead2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN29LifeFixture_fredkinRead2_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN29LifeFixture_fredkinRead2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  303:TEST(LifeFixture, fredkinRead2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  304:	FredkinCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  305:	c.read('0');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  306:	assert(c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  307:}
+        -:  308:
+function _ZN33LifeFixture_fredkinTransform_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN33LifeFixture_fredkinTransform_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN33LifeFixture_fredkinTransform_Test8TestBodyEv called 1 returned 100% blocks executed 75%
+function _ZN33LifeFixture_fredkinTransform_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  309:TEST(LifeFixture, fredkinTransform) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  310:	FredkinCell c;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  311:	c.read('0');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  312:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  313:	c.flip();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  314:	assert(c.needsTransform());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  315:}
+        -:  316:
+function _ZN26LifeFixture_cellRead1_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_cellRead1_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_cellRead1_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN26LifeFixture_cellRead1_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  317:TEST(LifeFixture, cellRead1) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  318:	Cell c;
+call    0 returned 100%
+        1:  319:	c.read('0');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  320:	assert(c.getCellType() == AbstractCell::FREDKIN);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  321:}
+        -:  322:
+function _ZN26LifeFixture_cellRead2_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_cellRead2_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_cellRead2_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN26LifeFixture_cellRead2_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  323:TEST(LifeFixture, cellRead2) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  324:	Cell c;
+call    0 returned 100%
+        1:  325:	c.read('*');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  326:	assert(c.getCellType() == AbstractCell::CONWAY);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  327:}
+        -:  328:
+function _ZN26LifeFixture_cellRead3_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_cellRead3_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_cellRead3_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN26LifeFixture_cellRead3_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  329:TEST(LifeFixture, cellRead3) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  330:	Cell c;
+call    0 returned 100%
+        1:  331:	c.read('0');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  332:	assert(c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  333:}
+        -:  334:
+function _ZN26LifeFixture_cellRead4_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_cellRead4_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_cellRead4_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN26LifeFixture_cellRead4_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  335:TEST(LifeFixture, cellRead4) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  336:	Cell c;
+call    0 returned 100%
+        1:  337:	c.read('*');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  338:	assert(c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  339:}
+        -:  340:
+function _ZN26LifeFixture_cellRead5_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_cellRead5_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_cellRead5_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN26LifeFixture_cellRead5_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  341:TEST(LifeFixture, cellRead5) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  342:	Cell c;
+call    0 returned 100%
+        1:  343:	c.read('-');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  344:	assert(!c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+        1:  345:}
+        -:  346:
+function _ZN26LifeFixture_cellRead6_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN26LifeFixture_cellRead6_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN26LifeFixture_cellRead6_Test8TestBodyEv called 1 returned 100% blocks executed 70%
+function _ZN26LifeFixture_cellRead6_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:  347:TEST(LifeFixture, cellRead6) {
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+        1:  348:	Cell c;
+call    0 returned 100%
+        1:  349:	c.read('.');
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:  350:	assert(!c.isAlive());
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 0% (fallthrough)
+branch  4 taken 100%
+call    5 never executed
+call    6 returned 100%
+call    7 never executed
+function _GLOBAL__sub_I__ZN26LifeFixture_initLife1_Test10test_info_E called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        4:  351:}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0%
