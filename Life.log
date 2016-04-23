@@ -1,0 +1,47 @@
+commit c6b0b60e5ed927d6616f7b3807481983b0c2d5e4
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Fri Apr 22 19:14:05 2016 -0500
+
+    Final commit
+
+commit f05af42f1f1bd130bc9d37b4b20620eca9eb0740
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Fri Apr 22 18:55:07 2016 -0500
+
+    Finished unit tests and doxy
+
+commit aa28343661c8ca5f5838c96d9288404d537733b9
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Fri Apr 22 17:13:13 2016 -0500
+
+    Now passes all the tests
+
+commit c872f77c72798186f6e4cb55d40a2f2155475d53
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Fri Apr 22 13:44:16 2016 -0500
+
+    ConwayCells working now
+
+commit 1468429a62c6f8ae7e0166a95cd3f570034ec045
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Fri Apr 22 09:53:10 2016 -0500
+
+    Fixed compile errors
+
+commit b88d0cf05e2cf312fbf389087a5288cfcfde5077
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Wed Apr 20 12:21:02 2016 -0500
+
+    Added all necessary files
+
+commit 3f6926af391625fdb5f36e97ad73df297442f964
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Wed Apr 20 12:19:57 2016 -0500
+
+    Added all necessary files
+
+commit 6a447700777e089dc09b3081556f0ae2a7eb6ecc
+Author: Frederick Copes <fritzc@cs.utexas.edu>
+Date:   Wed Apr 20 12:05:18 2016 -0500
+
+    First commit
